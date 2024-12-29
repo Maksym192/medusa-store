@@ -6,7 +6,7 @@ A custom CLI script is a function to execute through Medusa's CLI tool. This is 
 
 To create a custom CLI script, create a TypeScript or JavaScript file under the `src/scripts` directory. The file must default export a function.
 
-For example, create the file `src/scripts/my-script.js` with the following content:
+For example, create the file `src/scripts/my-script.ts` with the following content:
 
 ```ts title="src/scripts/my-script.ts"
 import { 
@@ -36,7 +36,7 @@ The function receives as a parameter an object having a `container` property, wh
 To run the custom CLI script, run the `exec` command:
 
 ```bash
-npx medusa exec ./src/scripts/my-script.js
+npx medusa exec ./src/scripts/my-script.ts
 ```
 
 ---
@@ -60,5 +60,5 @@ export default async function myScript ({
 Then, pass the arguments in the `exec` command after the file path:
 
 ```bash
-npx medusa exec ./src/scripts/my-script.js arg1 arg2
+npx medusa exec ./src/scripts/my-script.ts arg1 arg2
 ```

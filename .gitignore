@@ -25,4 +25,3 @@ build
 
 .medusa
 
-echo ".env" >> .gitignore
